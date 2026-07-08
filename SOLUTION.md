@@ -102,7 +102,7 @@ This draws the boundary line for the user. Specifies where exactly they can perf
 
 **User Name: alice
 
-**Policy Attached:S3-ReadOnly-SpecificBucket
+**Policy Attached: S3-ReadOnly-SpecificBucket
 
 **Attachment Method: Console 
 
@@ -119,15 +119,15 @@ N/A
 
 ### EC2 Service Role
 
-**Role Name:** ___________________________
+**Role Name: EC2-S3-ReadOnly-Role
 
-**Role ARN:** ___________________________
+**Role ARN:arn:aws:iam::743631836010:role/EC2-S3-ReadOnly-Role
 
-**Trusted Entity:** ___________________________
+**Trusted Entity:ec2.amazonaws.com
 
 **Attached Policies:**
-1. ___________________________
-2. ___________________________
+1. AmazonS3ReadOnlyAccess
+2. N/A
 
 **Trust Relationship JSON:**
 ```json
@@ -141,22 +141,24 @@ N/A
 ```
 
 **Screenshot 5: EC2 Service Role**
-![EC2 Role](screenshots/05-ec2-role.png)
+<img width="1472" height="784" alt="05-ec2-role" src="https://github.com/user-attachments/assets/458e2ba8-48ba-4e99-9b0a-223de19ab1b8" />
+
 
 ---
 
 ### Lambda Execution Role
 
-**Role Name:** ___________________________
+**Role Name: Lambda-Basic-Execution-Role
 
-**Role ARN:** ___________________________
+**Role ARN: arn:aws:iam::743631836010:role/Lambda-Basic-Execution-Role
 
 **Attached Policies:**
-1. ___________________________
-2. ___________________________
+1. AWSLambdaBasicExecutionRole
+2. CloudWatch-Logs-Write-Only
 
 **Screenshot 6: Lambda Role**
-![Lambda Role](screenshots/06-lambda-role.png)
+<img width="1955" height="788" alt="06-lambda-role" src="https://github.com/user-attachments/assets/6e453640-d4c7-4539-ba75-9c24aafa0da9" />
+
 
 ---
 
