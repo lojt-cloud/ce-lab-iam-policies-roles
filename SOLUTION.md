@@ -75,7 +75,7 @@ This draws the boundary line for the user. Specifies where exactly they can perf
 
 ### EC2 Start/Stop Policy
 
-**Policy Name: EC2-StartStop-Only ______________
+**Policy Name: EC2-StartStop-Only
 
 **Policy ARN: arn:aws:iam::743631836010:policy/EC2-StartStop-Only
 
@@ -87,10 +87,9 @@ This draws the boundary line for the user. Specifies where exactly they can perf
 
 ### CloudWatch Logs Write Policy
 
-**Policy Name: CloudWatch-Logs-Write-Only_____________
+**Policy Name: CloudWatch-Logs-Write-Only
 
-**Policy ARN: arn:aws:iam::743631836010:policy/CloudWatch-Logs-Write-Only__________
-
+**Policy ARN: arn:aws:iam::743631836010:policy/CloudWatch-Logs-Write-Only
 **Screenshot 3: CloudWatch Logs Policy**
 <img width="1463" height="782" alt="03-cloudwatch-policy" src="https://github.com/user-attachments/assets/a73cd74e-601e-40e2-8967-72de6fe47c0d" />
 
@@ -101,20 +100,18 @@ This draws the boundary line for the user. Specifies where exactly they can perf
 
 ### Policy Attached to User
 
-**User Name:** ___________________________
+**User Name: alice
 
-**Policy Attached:** ___________________________
+**Policy Attached:S3-ReadOnly-SpecificBucket
 
-**Attachment Method:** ☐ Console ☐ CLI
+**Attachment Method: Console 
 
 **CLI Command (if used):**
-```bash
-_____________________________________________________________
-_____________________________________________________________
-```
+N/A
 
 **Screenshot 4: Policy Attached**
-![Policy Attachment](screenshots/04-policy-attached.png)
+<img width="1951" height="1025" alt="04-policy-attached" src="https://github.com/user-attachments/assets/8008395e-2737-4505-9e37-715e3bec81c1" />
+
 
 ---
 
