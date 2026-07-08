@@ -75,23 +75,25 @@ This draws the boundary line for the user. Specifies where exactly they can perf
 
 ### EC2 Start/Stop Policy
 
-**Policy Name:** ___________________________
+**Policy Name: EC2-StartStop-Only ______________
 
-**Policy ARN:** ___________________________
+**Policy ARN: arn:aws:iam::743631836010:policy/EC2-StartStop-Only
 
 **Screenshot 2: EC2 Custom Policy**
-![EC2 Policy](screenshots/02-ec2-policy.png)
+<img width="1492" height="798" alt="02-ec2-policy" src="https://github.com/user-attachments/assets/2ce39113-010d-46ce-a3f8-cf999306d7c3" />
+
 
 ---
 
 ### CloudWatch Logs Write Policy
 
-**Policy Name:** ___________________________
+**Policy Name: CloudWatch-Logs-Write-Only_____________
 
-**Policy ARN:** ___________________________
+**Policy ARN: arn:aws:iam::743631836010:policy/CloudWatch-Logs-Write-Only__________
 
 **Screenshot 3: CloudWatch Logs Policy**
-![CloudWatch Policy](screenshots/03-cloudwatch-policy.png)
+<img width="1463" height="782" alt="03-cloudwatch-policy" src="https://github.com/user-attachments/assets/a73cd74e-601e-40e2-8967-72de6fe47c0d" />
+
 
 ---
 
