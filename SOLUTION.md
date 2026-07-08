@@ -1,7 +1,7 @@
 # Lab Solution: IAM Policies and Roles
 
-**Student Name:** ___________________________  
-**Date:** ___________________________  
+**Student Name:** Balint Lojt__________________  
+**Date:** 08/07/2026_________________  
 **Lab Completion Time:** ___________ minutes
 
 ---
@@ -13,42 +13,27 @@
 **Explain each component in your own words:**
 
 **Version:**
-```
-_____________________________________________________________
-_____________________________________________________________
-```
+It is the language edition that I'm writing in. I can specify here which rules and features I want to use when reading the document. For AWS, it usually is "2012-10-17"
+
 
 **Statement:**
-```
-_____________________________________________________________
-_____________________________________________________________
-```
+This is the main body of the policy, acting as the container for all your rules. It’s basically a big list where I write down all the individual permission blocks I want to enforce in the policy.
+
 
 **Sid:**
-```
-_____________________________________________________________
-_____________________________________________________________
-```
+optional but useful, this works as a nickname giving option. Makes it easier to remember what the given policy is about without digging deep inside the file itself. 
 
 **Effect:**
-```
-_____________________________________________________________
-_____________________________________________________________
-```
+It states whether the person can do a certain action or not. The only 2 options here are "Allow" or "Deny". It is straightforward that "Allow" would give permit to do the action, and "Deny" would not. 
+
 
 **Action:**
-```
-_____________________________________________________________
-_____________________________________________________________
-```
+It specifies what actions can be done (edit drafts, delete users, view invoices), and only the specified tasks here can be executed; anything that is not described here, the person has no permission.
+
 
 **Resource:**
-```
-_____________________________________________________________
-_____________________________________________________________
-```
+This draws the boundary line for the user. Specifies where exactly they can perform their actions. Which folder, which server, etc. 
 
----
 
 ## Part 2: Custom IAM Policies Created
 
