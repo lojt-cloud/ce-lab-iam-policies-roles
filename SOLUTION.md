@@ -201,42 +201,40 @@ N/A
 <img width="1863" height="599" alt="08-policy-simulator" src="https://github.com/user-attachments/assets/dfe8ba4a-9139-4131-ba9c-995d4c9bae42" />
 
 
----
 
 ### AWS CLI Testing
 
 **Test 1: S3 List Bucket**
 ```bash
-# Command:
+# Command:aws s3 ls s3://bob-dev-test/
 
 # Output:
-_____________________________________________________________
-_____________________________________________________________
+2026-07-08 15:40:30      87814 sage.jpg
 
-# Result: ☐ Success ☐ Access Denied
-```
+# Result:  Success 
+
 
 **Test 2: S3 Upload File**
 ```bash
-# Command:
+# Command: echo "test" > test.txt
 
 # Output:
-_____________________________________________________________
-_____________________________________________________________
+echo "test" > test.txt
+lojtb@LojtLaptop:~/cloud-engineering/ce-lab-iam-policies-roles$ ls
+README.md  SOLUTION.md  ec2-start-stop-policy.json  screenshots  test.txt
 
-# Result: ☐ Success ☐ Access Denied (Expected)
+# Result: Success, but expected Access Denied
 ```
 
 **Test 3: S3 Download File**
 ```bash
-# Command:
+# Command: aws s3 cp s3://s3-bob-test/sage.jpg ./sage-downloaded.jpg
 
 # Output:
-_____________________________________________________________
-_____________________________________________________________
+download: s3://s3-bob-test/sage.jpg to ./sage-downloaded.jpg
 
-# Result: ☐ Success ☐ Access Denied
-```
+# Result:  Success 
+
 
 ---
 
