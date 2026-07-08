@@ -164,19 +164,20 @@ N/A
 
 ### Cross-Account Access Role
 
-**Role Name:** ___________________________
+**Role Name: CrossAccount-ReadOnly-Role
 
-**Role ARN:** ___________________________
+**Role ARN: arn:aws:iam::743631836010:role/CrossAccount-ReadOnly-Role
 
-**External Account ID:** ___________________________
+**External Account ID:********6010
 
-**External ID:** ___________________________
+**External ID: lojt-cloud
 
 **Attached Policies:**
-1. ___________________________
+1. ReadOnlyAccess
 
 **Screenshot 7: Cross-Account Role**
-![Cross-Account Role](screenshots/07-cross-account-role.png)
+<img width="1980" height="975" alt="07-cross-account-role" src="https://github.com/user-attachments/assets/8e47ba6c-23c8-43e6-84ea-44378967f2fb" />
+
 
 ---
 
@@ -184,20 +185,21 @@ N/A
 
 ### Policy Simulator Results
 
-**Policy Tested:** ___________________________
+**Policy Tested: Yes
 
 **Test Results:**
 
 | Action | Expected Result | Actual Result | Pass/Fail |
 |--------|----------------|---------------|-----------|
-| s3:GetObject | Allowed | | ☐ Pass ☐ Fail |
-| s3:PutObject | Denied | | ☐ Pass ☐ Fail |
-| s3:DeleteObject | Denied | | ☐ Pass ☐ Fail |
-| ec2:StartInstances | | | ☐ Pass ☐ Fail |
-| ec2:TerminateInstances | | | ☐ Pass ☐ Fail |
+| s3:GetObject    | Allowed| | Pass |
+| s3:PutObject    | Denied | | Fail |
+| s3:DeleteObject | Denied | | Fail |
+| ec2:StartInstances         | N/A  |
+| ec2:TerminateInstances     | N/A  |
 
 **Screenshot 8: Policy Simulator**
-![Policy Simulator](screenshots/08-policy-simulator.png)
+<img width="1863" height="599" alt="08-policy-simulator" src="https://github.com/user-attachments/assets/dfe8ba4a-9139-4131-ba9c-995d4c9bae42" />
+
 
 ---
 
