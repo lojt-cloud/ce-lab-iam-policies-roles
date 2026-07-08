@@ -1,7 +1,7 @@
 # Lab Solution: IAM Policies and Roles
 
-**Student Name:** Balint Lojt__________________  
-**Date:** 08/07/2026_________________  
+**Student Name:** Balint Lojt_______ 
+**Date:** 08/07/2026________________  
 **Lab Completion Time:** ___________ minutes
 
 ---
@@ -39,24 +39,37 @@ This draws the boundary line for the user. Specifies where exactly they can perf
 
 ### S3 Read-Only Policy
 
-**Policy Name:** ___________________________
+**Policy Name: S3-ReadOnly-SpecificBucket
 
-**Bucket Name Used:** ___________________________
+**Bucket Name Used:** S3-ReadOnly-SpecificBucket
 
 **Policy JSON:**
-```json
 {
   "Version": "2012-10-17",
   "Statement": [
-    
-    
-    
+    {
+      "Sid": "ListSpecificBucket",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket"
+      ],
+      "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME"
+    },
+    {
+      "Sid": "ReadObjectsInBucket",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:GetObjectVersion"
+      ],
+      "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/*"
+    }
   ]
 }
-```
 
 **Screenshot 1: S3 Custom Policy**
-![S3 Policy](screenshots/01-s3-policy.png)
+<img width="1469" height="790" alt="01-s3-policy" src="https://github.com/user-attachments/assets/5e359a0d-12f6-4a06-924e-db6deaed91aa" />
+
 
 ---
 
